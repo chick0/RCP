@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -309,7 +309,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 749259037}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1630684747}
+        m_TargetAssemblyTypeName: User, Assembly-CSharp
+        m_MethodName: paperClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &749259037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -431,7 +443,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 839434351}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1630684747}
+        m_TargetAssemblyTypeName: User, Assembly-CSharp
+        m_MethodName: rockClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &839434351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -755,7 +779,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1501424454}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1630684747}
+        m_TargetAssemblyTypeName: User, Assembly-CSharp
+        m_MethodName: scissorsClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &1501424454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -939,6 +975,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1630684746}
   - component: {fileID: 1630684745}
+  - component: {fileID: 1630684747}
   m_Layer: 0
   m_Name: Director
   m_TagString: Untagged
@@ -973,6 +1010,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1630684747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630684744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f32ab8906489f98498723bbe52077fd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  director: {fileID: 1630684745}
 --- !u!1 &1813203995
 GameObject:
   m_ObjectHideFlags: 0
