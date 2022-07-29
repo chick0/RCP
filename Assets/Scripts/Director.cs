@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Director : MonoBehaviour
 {
+    public Rank rank;
+    public List<RankData> RankTable;
+
     public static string Name;
     public static int Score;
 
@@ -11,6 +14,7 @@ public class Director : MonoBehaviour
     public readonly int Rock     = 1;
     public readonly int Paper    = 2;
 
+    readonly float defaultTime = 15;
     float time = 0;
 
     int getComputerChoice()
@@ -57,18 +61,15 @@ public class Director : MonoBehaviour
         }
     }
 
-    void UpdateRank()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
-        this.time += Time.deltaTime;
-        if(this.time >= (3 * 60))
+        this.time -= Time.deltaTime;
+
+        if(this.time <= 0)
         {
-            this.UpdateRank();
+            this.time = this.defaultTime;
+            StartCoroutine(this.rank.Pull());
         }
     }
 }

@@ -976,6 +976,7 @@ GameObject:
   - component: {fileID: 1630684746}
   - component: {fileID: 1630684745}
   - component: {fileID: 1630684747}
+  - component: {fileID: 1630684748}
   m_Layer: 0
   m_Name: Director
   m_TagString: Untagged
@@ -995,6 +996,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 540839891b324fc4ab72f34000e155fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rank: {fileID: 1630684748}
+  RankTable: []
 --- !u!4 &1630684746
 Transform:
   m_ObjectHideFlags: 0
@@ -1020,6 +1023,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f32ab8906489f98498723bbe52077fd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  director: {fileID: 1630684745}
+--- !u!114 &1630684748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630684744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47c9916dfbf5cb142a5ca0a813f857f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   director: {fileID: 1630684745}
