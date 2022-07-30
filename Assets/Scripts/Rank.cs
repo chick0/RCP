@@ -33,7 +33,7 @@ public class RankTable
 
 public class Rank : MonoBehaviour
 {
-    private readonly string API_HOST = "http://127.0.0.1:8080";
+    private readonly string API_HOST = "http://api.mong-rsp.kro.kr:8080";
     public Director director;
 
     string GetUrl()
