@@ -312,7 +312,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1630684747}
         m_TargetAssemblyTypeName: User, Assembly-CSharp
-        m_MethodName: paperClick
+        m_MethodName: PaperClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -446,7 +446,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1630684747}
         m_TargetAssemblyTypeName: User, Assembly-CSharp
-        m_MethodName: rockClick
+        m_MethodName: RockClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -782,7 +782,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1630684747}
         m_TargetAssemblyTypeName: User, Assembly-CSharp
-        m_MethodName: scissorsClick
+        m_MethodName: ScissorsClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

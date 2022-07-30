@@ -1,23 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class User : MonoBehaviour
 {
     public Director director;
 
-    public void rockClick()
+    public void RockClick()
     {
-        this.director.CalcResult(this.director.Rock);
+        director.CalcResult(director.Rock);
     }
 
-    public void scissorsClick()
+    public void ScissorsClick()
     {
-        this.director.CalcResult(this.director.Scissors);
+        director.CalcResult(director.Scissors);
     }
 
-    public void paperClick()
+    public void PaperClick()
     {
-        this.director.CalcResult(this.director.Paper);
+        director.CalcResult(director.Paper);
     }
 }

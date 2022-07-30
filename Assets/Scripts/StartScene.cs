@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEditor;
@@ -9,9 +7,9 @@ public class StartScene : MonoBehaviour
 {
     public TMP_InputField NameInput;
 
-    public void onStartClick()
+    public void OnStartClick()
     {
-        string name = this.NameInput.text.Trim();
+        string name = NameInput.text.Trim();
 
         if (name.Length != 0)
         {
@@ -37,6 +35,6 @@ public class StartScene : MonoBehaviour
 
     void Start()
     {
-        this.NameInput.characterLimit = 8;
+        NameInput.characterLimit = 8;
     }
 }
