@@ -37,6 +37,6 @@ public class StartScene : MonoBehaviour
 
     void Start()
     {
-        this.NameInput.characterLimit = 255;
+        this.NameInput.characterLimit = 8;
     }
 }
